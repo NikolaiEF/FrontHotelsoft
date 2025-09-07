@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { UserStorageService } from 'src/app/auth/services/storage/user-storage.service';
 
 
-const BASIC_URL = "http://localhost:8080/";
+const BASIC_URL = "https://back-hotel-production.up.railway.app/";
 
 @Injectable({
   providedIn: 'root'

@@ -6,7 +6,7 @@ import { UserStorageService } from 'src/app/auth/services/storage/user-storage.s
 'Bearer ' + UserStorageService.getToken()
 
 
-const BASIC_URL = "http://localhost:8080/";
+const BASIC_URL = "https://back-hotel-production.up.railway.app/";
 
 
 @Injectable({
