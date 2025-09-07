@@ -1,0 +1,45 @@
+<div class="center-form">
+    <img src="../../../assets/Logotipo.png" alt="Logo" class="logo"/>
+    <h2>REGISTRO DE USUARIOS</h2>
+    <form nz-form [formGroup]="registerForm" (ngSubmit)="submitForm()"  class="custom-form">
+        <nz-form-item>
+            <nz-form-control nzErrorTip="Por favor ingrese su nombre de usuario!">
+                <nz-input-group nzPrefixIcon="idcard">
+                    <input type="text" formControlName="name" placeholder="Ingrese su nombre de usuario"/>
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+
+
+         <nz-form-item>
+            <nz-form-control nzErrorTip="Por favor ingrese su correo electronico!">
+                <nz-input-group nzPrefixIcon="user">
+                    <input type= "text"formControlName="email" placeholder="Ingrese su correo electronico"/>
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+
+         <nz-form-item>
+            <nz-form-control nzErrorTip="Por favor ingrese su contraseña!">
+                <nz-input-group nzPrefixIcon="lock">
+                    <input type= "password" formControlName="password" placeholder="Ingrese su contraseña"/>
+                </nz-input-group>
+            </nz-form-control>
+        </nz-form-item>
+
+
+        <button nz-button nzType="primary" nzBlock [disabled]="registerForm.invalid"  class="w-100">
+            Registrarse
+        </button>
+
+
+
+
+
+
+
+
+
+
+    </form>
+</div>

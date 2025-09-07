@@ -1,0 +1,74 @@
+/* --- Estilos para el menú lateral (sider) --- */
+nz-sider {
+  background: #1f2d3d; /* fondo oscuro elegante */
+  min-height: 100vh;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+nz-sider .logo {
+  height: 60px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/* --- Menú --- */
+nz-sider ul[nz-menu] {
+  margin-top: 20px;
+  border-right: none;
+}
+
+nz-sider li[nz-menu-item] {
+  color: #ddd;
+  font-weight: 500;
+  border-radius: 8px;
+  margin: 6px 10px;
+  transition: all 0.3s ease;
+}
+
+nz-sider li[nz-menu-item]:hover {
+  background: #4a7c59; /* verde principal */
+  color: #fff;
+  transform: translateX(5px);
+}
+
+nz-sider li[nz-menu-item] strong {
+  color: inherit;
+}
+
+nz-sider span[nz-icon] {
+  margin-right: 8px;
+  color: #4a7c59; /* íconos en verde */
+}
+
+/* --- Estilos para el contenido principal --- */
+nz-content {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  min-height: calc(100vh - 64px);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Footer --- */
+nz-footer {
+  text-align: center;
+  background: #1f2d3d;
+  color: #eee;
+  padding: 15px 0;
+  margin-top: 20px;
+  border-top: 3px solid #4a7c59;
+  font-weight: 500;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  nz-sider {
+    min-height: auto;
+  }
+  nz-content {
+    margin: 10px;
+    padding: 15px;
+  }
+}

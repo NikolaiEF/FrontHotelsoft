@@ -1,0 +1,80 @@
+.center-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 24px;
+
+  .post-room-btn {
+    margin-bottom: 24px;
+    background: #1890ff; // azul primario de NG-Zorro
+    border-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+    &:hover {
+      background: #40a9ff;
+    }
+  }
+
+  .room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+
+    .room-row {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      nz-card {
+        width: 300px;
+        min-height: 180px;
+        background: #fdfdfd;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+        }
+
+        nz-card-meta {
+          margin-top: 12px;
+
+          &:first-of-type {
+            font-weight: bold;
+            font-size: 18px;
+            color: #1890ff; // resalta el nombre
+          }
+
+          &:last-of-type {
+            font-size: 15px;
+            color: #333;
+          }
+        }
+
+        .icon {
+          cursor: pointer;
+          font-size: 20px;
+          margin: 0 8px;
+          transition: opacity 0.2s ease;
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination {
+    margin-top: 24px;
+
+    nz-pagination {
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+<div class="room-details-form-container">
+  <nz-form nz-form nzLayout="vertical" class="room-details-form" [formGroup]="roomDetailsForm" (ngSubmit)="submitForm()">
+    <div class="form-title">Ingrese los detalles de la habitación</div>
+
+    <!-- Nombre de la habitación -->
+    <nz-form-item>
+      <nz-form-control [nzSpan]="16" [nzOffset]="4">
+        <input nz-input formControlName="name" placeholder="Nombre de la habitación" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <!-- Tipo de habitación -->
+    <nz-form-item>
+      <nz-form-control [nzSpan]="16" [nzOffset]="4">
+        <input nz-input formControlName="type" placeholder="Tipo de Habitación" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <!-- Precio -->
+    <nz-form-item>
+      <nz-form-control [nzSpan]="16" [nzOffset]="4">
+        <input nz-input formControlName="price" placeholder="Precio de la Habitación" type="number" />
+      </nz-form-control>
+    </nz-form-item>
+
+    <!-- Botón Guardar -->
+    <nz-form-item>
+      <nz-form-control [nzSpan]="16" [nzOffset]="4">
+        <button nz-button nzType="primary" type="submit"  (click)="submitForm()">Guardar</button>
+      </nz-form-control>
+    </nz-form-item>
+  </nz-form>
+</div>
